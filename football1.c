@@ -1,24 +1,22 @@
 #include<stdio.h>
 #include<math.h>
+#define maxinput 100
 int main ()
 {
-	int n,i,j,k, max,g[n],f[n],res[20];
-	int testc=0;
-	printf("\n");
-	scanf("%d",&testc);
+	 long long int n ,i,j,k,max ,g[maxinput],f[maxinput],res[maxinput];
+	 long long int testc=0;
+	scanf("%lld",&testc);
 	for(k=0;k<testc;k++)
 	{
-			printf("\n");
-	scanf("%d",&n);
-	printf("\n");
+		
+	scanf("%ld",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&g[i]);
+		scanf("%lld",&g[i]);
 	}
-	printf("\n");
-	for(i=0;i<n;i++)
+		for(i=0;i<n;i++)
 	{
-		scanf("%d",&f[i]);
+		scanf("%lld",&f[i]);
 	}
 //	printf("\ntotal points of player for testcase %d",k+1);
 	j=0;
@@ -40,7 +38,7 @@ int main ()
 		res[max]=res[j];
 		}
 	}
-	printf("\n%d",res[max]);
+	printf("\n%lld",res[max]);
 	
    }
 }
